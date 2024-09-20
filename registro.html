@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0MgDSMKl5yXEoSy3YYFkJRDCV9w6-lyHX9w&s" alt="Logo" class="logo">
+            <h1>Registro</h1>
+            <form id="registerForm">
+                <div class="textbox">
+                    <input type="text" id="newUsername" placeholder="Usuário" required>
+                </div>
+                <div class="textbox">
+                    <input type="text" id="matriculaCpf" placeholder="Matrícula ou CPF" required>
+                </div>
+                <div class="textbox">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="textbox">
+                    <select id="turma" required>
+                        <option value="" disabled selected>Selecione a Série e Turma</option>
+                        <option value="1ano-a-informatica">1º Ano - A (Informática)</option>
+                        <option value="1ano-b-informatica">1º Ano - B (Informática)</option>
+                        <option value="2ano-a-informatica">2º Ano - A (Informática)</option>
+                        <option value="2ano-b-informatica">2º Ano - B (Informática)</option>
+                        <option value="3ano-a-informatica">3º Ano - A (Informática)</option>
+                        <option value="3ano-b-informatica">3º Ano - B (Informática)</option>
+                        <option value="1ano-a-redes">1º Ano - A (Redes)</option>
+                        <option value="1ano-b-redes">1º Ano - B (Redes)</option>
+                        <option value="2ano-a-redes">2º Ano - A (Redes)</option>
+                        <option value="2ano-b-redes">2º Ano - B (Redes)</option>
+                        <option value="3ano-a-redes">3º Ano - A (Redes)</option>
+                        <option value="3ano-b-redes">3º Ano - B (Redes)</option>
+                    </select>
+                </div>
+                <div class="textbox">
+                    <input type="password" id="newPassword" placeholder="Senha" required>
+                </div>
+                <button type="submit">Registrar</button>
+            </form>
+            <p id="registerMessage"></p>
+            <p>Já tem uma conta? <a href="login.html">Faça login aqui</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

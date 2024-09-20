@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BibliWeb - Reserva de Livros</title>
+    <link rel="stylesheet" href="reserva.css">
+</head>
+<body>
+    <a href="home.html" class="back-button">Voltar</a>
+    <section class="reservation">
+        <h2>Reserve seu Livro</h2>
+        <form class="reservation-form">
+            <label for="book-title">Título do Livro:</label>
+            <input type="text" id="book-title" name="book-title" required>
+
+            <label for="author">Autor:</label>
+            <input type="text" id="author" name="author" required>
+
+            <label for="date">Data de Reserva:</label>
+            <input type="date" id="date" name="date" required>
+
+            <div class="reservation-info">
+                <p><strong>Aviso:</strong> O livro deve ser devolvido em até 7 dias. Você receberá um aviso via WhatsApp quando a data de devolução estiver próxima.</p>
+            </div>
+
+            <button type="submit">Reservar Livro</button>
+        </form>
+    </section>
+    <script src="reserva.js"></script>
+</body>
+</html>

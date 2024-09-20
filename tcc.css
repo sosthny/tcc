@@ -1,0 +1,173 @@
+/* Reset básico */
+body, h1, p, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d1c4e9;
+    color: #F3E5F5;
+    padding: 20px;
+}
+
+header {
+    background-color: #0f0046;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+/* Botão de voltar */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #FFFFFF;
+    color: #3207cc;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #F3E5F5;
+}
+
+.search-bar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#search-input {
+    padding: 10px;
+    width: 80%; /* Ajuste o tamanho conforme necessário */
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+main {
+    margin-top: 20px;
+}
+
+/* Estilo dos TCCs */
+.thesis-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.thesis-item {
+    background-color: #0f0046;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 calc(33% - 20px); /* Três colunas */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.thesis-item h3 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.thesis-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* Modal de detalhes do TCC */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #061174;
+    color: #FFFFFF;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Destaque no modal para Autor e Área */
+.modal h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    text-transform: uppercase; /* Maiúsculas */
+}
+
+.modal p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #E0E0E0;
+}
+
+.modal .thesis-info {
+    margin-bottom: 15px;
+}
+
+.modal .thesis-info .label {
+    font-size: 18px;
+    color: #F3E5F5; /* Lilás claro */
+    font-weight: normal; /* Não negrito */
+}
+
+.modal .thesis-info .value {
+    font-size: 18px;
+    color: #FFFFFF; /* Texto branco */
+}
+
+/* Botão de fechar modal */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Botão de reservar */
+button {
+    padding: 12px 20px;
+    background-color: #0f0046;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #311B92;
+}

@@ -1,0 +1,135 @@
+/* Reset básico */
+body, h1, p, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d1c4e9;
+    color: #F3E5F5;
+    padding: 20px;
+}
+
+header {
+    background-color: #0f0046;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #FFFFFF;
+    color: #092e6d;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-bar {
+    margin-top: 10px;
+}
+
+#search-input {
+    padding: 10px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book-item {
+    background-color: #0f0046;
+    color: #FFFFFF;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1 1 calc(33% - 20px); /* Três colunas */
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin: 10px 0; /* Espaço vertical */
+}
+
+.book-item img {
+    max-width: 100px;
+    border-radius: 8px;
+}
+
+.book-item .book-info {
+    flex: 1;
+}
+
+.book-item h3 {
+    margin-top: 0;
+}
+
+.book-item p {
+    margin-top: 5px;
+}
+
+.book-item .description {
+    margin-top: 10px;
+}
+
+.modal {
+    display: none; /* Oculta o modal por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #061174;
+    color: #FFFFFF; 
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Destacar informações no modal */
+.modal-content .book-title,
+.modal-content .book-author,
+.modal-content .book-genre {
+    font-weight: bold;
+}
+
+.book-list::after {
+    content: "";
+    flex: auto;
+}

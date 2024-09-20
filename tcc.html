@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de TCC</title>
+    <link rel="stylesheet" href="tcc.css">
+</head>
+<body>
+    <header>
+        <h1>Reserva de Trabalhos de Conclusão de Curso</h1>
+        <a href="home.html" class="back-btn">Voltar</a>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Pesquisar TCCs..." oninput="searchTheses()">
+        </div>
+    </header>
+
+    <main>
+        <div id="thesis-list" class="thesis-list"></div>
+    </main>
+
+    <!-- Modal de detalhes do TCC -->
+    <div id="thesis-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close-btn">&times;</span>
+            <h2 id="thesis-title"></h2>
+            <p id="thesis-author" class="thesis-info">
+                <span class="label">Autor:</span>
+                <span class="value"></span>
+            </p>
+            <p id="thesis-area" class="thesis-info">
+                <span class="label">Área:</span>
+                <span class="value"></span>
+            </p>
+            <p id="thesis-description"></p>
+            <button id="reserve-btn">Reservar</button>
+        </div>
+    </div>
+
+    <script src="tcc.js"></script>
+</body>
+</html>

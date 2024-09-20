@@ -1,0 +1,94 @@
+/* Estilos para o corpo da página */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #d1c4e9; /* Cor lilás igual ao fundo do formulário */
+    color: #333;
+}
+
+/* Estilos para o botão de voltar */
+.back-button {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background: #0f0046;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Garantir que o botão fique acima de outros elementos */
+    transition: background 0.3s;
+}
+
+.back-button:hover {
+    background: #092e6d; 
+}
+
+/* Estilos para o conteúdo principal */
+.reservation {
+    margin-top: 60px; /* Ajuste a margem superior para acomodar o botão de voltar */
+    padding: 20px;
+    background: #f3e5f5; /* Cor de fundo clara para contraste com o fundo lilás */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Limita a largura máxima do conteúdo */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reservation h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0f0046;
+}
+
+.reservation-info {
+    background: #d1c4e9; /* Cor lilás clara */
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-info p {
+    margin: 0;
+    font-size: 16px;
+    color: #0f0046; 
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.reservation-form label {
+    font-weight: bold;
+}
+
+.reservation-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.reservation-form button {
+    background: #0f0046;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.reservation-form button:hover {
+    background: #092e6d;
+}
+

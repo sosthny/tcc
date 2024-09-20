@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Perfil</title>
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+    <!-- Botão de voltar no canto superior esquerdo -->
+    <a href="home.html" class="back-button">Voltar</a>
+
+    <main>
+        <div class="profile-container">
+            <form id="profile-form">
+                <h2>Gerenciamento de Perfil</h2>
+                <div class="profile-header">
+                    <img id="profile-avatar" src="default-avatar.jpg" alt="Avatar">
+                    <button id="change-avatar-btn">Alterar Avatar</button>
+                </div>
+
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email">
+
+                <label for="current-password">Senha Atual:</label>
+                <input type="password" id="current-password" name="current-password" placeholder="Digite sua senha atual">
+
+                <label for="new-password">Nova Senha:</label>
+                <input type="password" id="new-password" name="new-password" placeholder="Digite sua nova senha">
+
+                <label for="confirm-password">Confirmar Nova Senha:</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirme sua nova senha">
+
+                <button type="submit">Atualizar Informações</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Modal para alterar o avatar -->
+    <div class="modal" id="avatar-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-avatar-modal">&times;</span>
+            <h2>Alterar Avatar</h2>
+            <input type="file" id="avatar-upload" accept="image/*">
+            <button id="upload-btn">Fazer Upload</button>
+        </div>
+    </div>
+
+    <!-- Notificação -->
+    <div class="notification" id="notification">
+        <span id="notification-message"></span>
+    </div>
+
+    <script src="perfil.js"></script>
+</body>
+</html>

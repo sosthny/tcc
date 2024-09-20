@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - BibliWeb</title>
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <button id="back-button">Voltar</button>
+    <div class="container">
+        <h2>Contato</h2>
+        <form id="contact-form">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">WhatsApp</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="success-message" class="hidden">Sua mensagem foi enviada com sucesso!</p>
+    </div>
+
+    <script src="contato.js"></script>
+</body>
+</html>
